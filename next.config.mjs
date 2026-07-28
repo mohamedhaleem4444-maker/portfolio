@@ -7,7 +7,7 @@ const nextConfig = {
         headers: [
           {
             key: 'Content-Length',
-            value: '66566144',
+            value: '66566024',
           },
         ],
       },
