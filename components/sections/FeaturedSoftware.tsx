@@ -65,8 +65,8 @@ export default function FeaturedSoftware() {
             </div>
           </div>
           
-          <div className="w-full lg:w-1/2">
-            <div className="relative rounded-2xl overflow-hidden border border-gray-700 shadow-2xl shadow-accent/20 group">
+          <div className="w-full lg:w-1/2 flex flex-col items-center">
+            <div className="relative rounded-2xl overflow-hidden border border-gray-700 shadow-2xl shadow-accent/20 group w-full">
               <div className="absolute inset-0 bg-gradient-to-t from-white dark:from-[#0a192f] via-transparent to-transparent opacity-0 group-hover:opacity-60 transition-opacity z-10" />
               {/* Using a placeholder for the screenshot provided by user */}
               <img 
@@ -78,6 +78,17 @@ export default function FeaturedSoftware() {
                 }}
               />
             </div>
+
+            <a 
+              href="/Geomodels_Batch_Runner_Setup.exe" 
+              download 
+              className="mt-8 flex items-center gap-2 px-8 py-4 bg-accent text-white font-semibold rounded-xl hover:bg-accent/90 transition-all shadow-lg hover:shadow-accent/30 hover:-translate-y-1"
+            >
+              <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+              </svg>
+              Download Software
+            </a>
           </div>
           
         </div>
