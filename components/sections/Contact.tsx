@@ -67,20 +67,26 @@ export default function Contact() {
           
           <div className="glass p-8 rounded-2xl">
             <h3 className="text-2xl font-semibold mb-6">Send a Message</h3>
-            <form className="space-y-4" onSubmit={(e) => e.preventDefault()}>
+            <form className="space-y-4" onSubmit={(e) => {
+              e.preventDefault();
+              const form = e.target as HTMLFormElement;
+              const name = (form.elements.namedItem('name') as HTMLInputElement).value;
+              const message = (form.elements.namedItem('message') as HTMLTextAreaElement).value;
+              window.location.href = `mailto:mohamedhaleem4444@gmail.com?subject=Portfolio Contact from ${name}&body=${encodeURIComponent(message)}`;
+            }}>
               <div>
                 <label htmlFor="name" className="block text-sm font-medium mb-1">Name</label>
-                <input type="text" id="name" className="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-700 bg-white dark:bg-black/50 focus:ring-2 focus:ring-primary outline-none transition-all" placeholder="John Doe" />
+                <input type="text" id="name" name="name" required className="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-700 bg-white dark:bg-black/50 focus:ring-2 focus:ring-primary outline-none transition-all" placeholder="John Doe" />
               </div>
               <div>
                 <label htmlFor="email" className="block text-sm font-medium mb-1">Email</label>
-                <input type="email" id="email" className="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-700 bg-white dark:bg-black/50 focus:ring-2 focus:ring-primary outline-none transition-all" placeholder="john@example.com" />
+                <input type="email" id="email" name="email" required className="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-700 bg-white dark:bg-black/50 focus:ring-2 focus:ring-primary outline-none transition-all" placeholder="john@example.com" />
               </div>
               <div>
                 <label htmlFor="message" className="block text-sm font-medium mb-1">Message</label>
-                <textarea id="message" rows={4} className="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-700 bg-white dark:bg-black/50 focus:ring-2 focus:ring-primary outline-none transition-all" placeholder="How can I help you?"></textarea>
+                <textarea id="message" name="message" required rows={4} className="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-700 bg-white dark:bg-black/50 focus:ring-2 focus:ring-primary outline-none transition-all" placeholder="How can I help you?"></textarea>
               </div>
-              <button type="submit" className="w-full bg-primary hover:bg-primary-dark text-white font-medium py-3 rounded-lg transition-colors">
+              <button type="submit" className="w-full bg-primary hover:bg-primary-dark text-white font-medium py-3 rounded-lg transition-colors shadow-lg active:scale-95">
                 Send Message
               </button>
             </form>

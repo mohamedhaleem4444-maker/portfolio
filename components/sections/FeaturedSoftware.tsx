@@ -82,13 +82,16 @@ export default function FeaturedSoftware() {
             <a 
               href="/Geomodels_Batch_Runner_Setup.exe" 
               download 
-              className="mt-8 flex items-center gap-2 px-8 py-4 bg-accent text-white font-semibold rounded-xl hover:bg-accent/90 transition-all shadow-lg hover:shadow-accent/30 hover:-translate-y-1"
+              className="mt-8 flex items-center justify-center gap-2 px-10 py-4 bg-accent text-white font-semibold rounded-xl hover:bg-accent/90 transition-colors shadow-lg active:scale-95 w-full sm:w-auto"
             >
               <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
               </svg>
-              Download Software
+              Download
             </a>
+            <p className="mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 bg-gray-100 dark:bg-gray-800 px-3 py-1 rounded-full">
+              File Size: 63.5 MB
+            </p>
           </div>
           
         </div>
