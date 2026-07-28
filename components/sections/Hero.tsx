@@ -26,7 +26,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <section id="hero" className="py-32 pt-48 flex items-center relative overflow-hidden bg-secondary/30 dark:bg-secondary-dark/30">
+    <section id="hero" className="py-32 pt-48 flex items-center relative overflow-hidden bg-white dark:bg-secondary-dark/30">
       {/* Background Grid & Particles */}
       <div className="absolute inset-0 z-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px]">
         <div className="absolute inset-0 bg-gradient-to-r from-background via-background/90 to-background/50" />

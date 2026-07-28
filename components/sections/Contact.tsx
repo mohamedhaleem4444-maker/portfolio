@@ -4,7 +4,7 @@ import { FiMail, FiPhone, FiLinkedin, FiMapPin } from "react-icons/fi";
 
 export default function Contact() {
   return (
-    <section id="contact" className="py-20 bg-secondary/30 dark:bg-secondary-dark/30">
+    <section id="contact" className="py-20 bg-white dark:bg-secondary-dark/30">
       <div className="container mx-auto px-6">
         <h2 className="text-3xl font-bold mb-12 text-center">Get In Touch</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
