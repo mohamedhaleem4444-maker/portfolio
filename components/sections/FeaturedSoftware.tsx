@@ -17,49 +17,48 @@ export default function FeaturedSoftware() {
         <div className="flex flex-col lg:flex-row items-center gap-16 max-w-6xl mx-auto">
           
           <div className="w-full lg:w-1/2">
-            <h3 className="text-4xl font-bold text-accent mb-6">GeoModels Batch Runner</h3>
+            <div className="flex items-center gap-4 mb-6">
+              <img src="/icon.ico" alt="Software Icon" className="w-12 h-12 object-contain" />
+              <h3 className="text-4xl font-bold text-accent">Geomodels Batch Runner</h3>
+            </div>
             <p className="text-lg text-gray-600 dark:text-gray-300 mb-8 leading-relaxed">
-              A comprehensive Python desktop application designed to automate geotechnical numerical modeling in PLAXIS. It enables batch execution of models (especially useful for seismic cases), scheduling, monitoring, and automated notifications.
+              It's a Geotechnical software developed by Mohamed Abd-elhalim using Python.
             </p>
             
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <div className="space-y-6">
               <div className="flex items-start">
-                <div className="p-3 bg-accent/20 rounded-lg mr-4 text-accent">
+                <div className="p-3 bg-accent/20 rounded-lg mr-4 text-accent shrink-0">
                   <FiCpu className="w-6 h-6" />
                 </div>
-                <div>
-                  <h4 className="font-semibold text-lg mb-1">Batch Execution</h4>
-                  <p className="text-sm text-gray-700 dark:text-gray-300">Run large numbers of PLAXIS 2D/3D models sequentially without manual intervention.</p>
+                <div className="pt-1">
+                  <p className="text-gray-700 dark:text-gray-300">The software schedules running a large number of models of geotechnical softwares such as PLAXIS 2D/3D.</p>
                 </div>
               </div>
               
               <div className="flex items-start">
-                <div className="p-3 bg-accent/20 rounded-lg mr-4 text-accent">
-                  <FiClock className="w-6 h-6" />
-                </div>
-                <div>
-                  <h4 className="font-semibold text-lg mb-1">Smart Scheduling</h4>
-                  <p className="text-sm text-gray-700 dark:text-gray-300">Automate PC shutdown or sleep after models finish running to save power.</p>
-                </div>
-              </div>
-              
-              <div className="flex items-start">
-                <div className="p-3 bg-accent/20 rounded-lg mr-4 text-accent">
+                <div className="p-3 bg-accent/20 rounded-lg mr-4 text-accent shrink-0">
                   <FiMail className="w-6 h-6" />
                 </div>
-                <div>
-                  <h4 className="font-semibold text-lg mb-1">Live Notifications</h4>
-                  <p className="text-sm text-gray-700 dark:text-gray-300">Receive email alerts with GUI screenshots updating you on the model's progress.</p>
+                <div className="pt-1">
+                  <p className="text-gray-700 dark:text-gray-300">Sending a live screenshot of the software GUI while running to user Gmail.</p>
                 </div>
               </div>
               
               <div className="flex items-start">
-                <div className="p-3 bg-accent/20 rounded-lg mr-4 text-accent">
+                <div className="p-3 bg-accent/20 rounded-lg mr-4 text-accent shrink-0">
+                  <FiClock className="w-6 h-6" />
+                </div>
+                <div className="pt-1">
+                  <p className="text-gray-700 dark:text-gray-300">Time scheduler to schedule running at the models remotely.</p>
+                </div>
+              </div>
+              
+              <div className="flex items-start">
+                <div className="p-3 bg-accent/20 rounded-lg mr-4 text-accent shrink-0">
                   <FiSettings className="w-6 h-6" />
                 </div>
-                <div>
-                  <h4 className="font-semibold text-lg mb-1">Custom Commands</h4>
-                  <p className="text-sm text-gray-700 dark:text-gray-300">Inject user-defined Python commands into the workflow seamlessly.</p>
+                <div className="pt-1">
+                  <p className="text-gray-700 dark:text-gray-300">Shutdown or sleep PC after running end.</p>
                 </div>
               </div>
             </div>
@@ -90,9 +89,7 @@ export default function FeaturedSoftware() {
               </svg>
               Download
             </a>
-            <p className="mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 bg-gray-100 dark:bg-gray-800 px-3 py-1 rounded-full">
-              File Size: 63.5 MB
-            </p>
+
           </div>
           
         </div>
