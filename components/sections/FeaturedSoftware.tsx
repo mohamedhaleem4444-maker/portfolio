@@ -80,8 +80,9 @@ export default function FeaturedSoftware() {
             </div>
 
             <a 
-              href="/Geomodels_Batch_Runner_Setup.exe" 
-              download 
+              href="https://www.mediafire.com/file/rriymtr286i7pns/Geomodels_Batch_Runner_Setup.rar/file" 
+              target="_blank" 
+              rel="noopener noreferrer"
               className="mt-8 flex items-center justify-center gap-2 px-10 py-4 bg-accent text-white font-semibold rounded-xl hover:bg-accent/90 transition-colors shadow-lg active:scale-95 w-full sm:w-auto"
             >
               <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
